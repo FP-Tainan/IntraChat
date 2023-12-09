@@ -208,6 +208,7 @@
             this.Pic_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Pic_Logo.TabIndex = 3;
             this.Pic_Logo.TabStop = false;
+            this.Pic_Logo.Click += new System.EventHandler(this.Pic_Logo_Click);
             // 
             // label1
             // 

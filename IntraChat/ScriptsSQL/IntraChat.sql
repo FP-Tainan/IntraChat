@@ -4,7 +4,7 @@ CREATE TABLE tbl_Usuario (
     id SERIAL PRIMARY KEY,
     usuario VARCHAR(255),
     nome VARCHAR(255),
-    senha VARCHAR(10),
+    senha VARCHAR(255),
     UNIQUE (usuario)
 );
 
