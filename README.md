@@ -5,3 +5,4 @@
  <li>Krypton.components.suite: <a href ="https://www.nuget.org/packages/Krypton.Components.Suite/4.5.9/"> <img width="20" src="https://api.nuget.org/v3-flatcontainer/krypton.components.suite/4.5.9/icon"></a></li>
  <li>PostgreSQL, banco hospedado no site Elephantsql.com: <a href = "https://www.elephantsql.com"><img width="20" src="https://api.elephantsql.com/img/service-logo.png"></a></li>
 
+![image](https://github.com/FP-Tainan/IntraChat/assets/147334601/ec2f916e-6b87-429a-9b91-d7f29aacb86e)
