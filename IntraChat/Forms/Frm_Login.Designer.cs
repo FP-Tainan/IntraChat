@@ -37,6 +37,7 @@
             this.Pic_Logo = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btn_verSenha = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Logo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,6 +55,8 @@
             this.kryptonPalette_Login.ButtonSpecs.FormRestore.Image = global::IntraChat.Properties.Resources.MaxMin22PX;
             this.kryptonPalette_Login.ButtonSpecs.FormRestore.ImageStates.ImagePressed = global::IntraChat.Properties.Resources.MaxMin22PX;
             this.kryptonPalette_Login.ButtonSpecs.FormRestore.ImageStates.ImageTracking = global::IntraChat.Properties.Resources.MaxMin22PX;
+            this.kryptonPalette_Login.ButtonStyles.ButtonForm.OverrideFocus.Border.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonPalette_Login.ButtonStyles.ButtonForm.OverrideFocus.Border.Color2 = System.Drawing.Color.Transparent;
             this.kryptonPalette_Login.ButtonStyles.ButtonForm.OverrideFocus.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -94,7 +97,7 @@
             this.Txt_Usuario.Location = new System.Drawing.Point(13, 27);
             this.Txt_Usuario.Margin = new System.Windows.Forms.Padding(4);
             this.Txt_Usuario.Name = "Txt_Usuario";
-            this.Txt_Usuario.Size = new System.Drawing.Size(285, 60);
+            this.Txt_Usuario.Size = new System.Drawing.Size(295, 60);
             this.Txt_Usuario.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Txt_Usuario.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.Txt_Usuario.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
@@ -113,7 +116,7 @@
             // 
             // Btn_Acessar
             // 
-            this.Btn_Acessar.Location = new System.Drawing.Point(48, 196);
+            this.Btn_Acessar.Location = new System.Drawing.Point(46, 196);
             this.Btn_Acessar.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Acessar.Name = "Btn_Acessar";
             this.Btn_Acessar.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
@@ -129,7 +132,7 @@
             this.Btn_Acessar.OverrideDefault.Border.Rounding = 20;
             this.Btn_Acessar.OverrideDefault.Border.Width = 1;
             this.Btn_Acessar.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.Btn_Acessar.Size = new System.Drawing.Size(207, 53);
+            this.Btn_Acessar.Size = new System.Drawing.Size(200, 53);
             this.Btn_Acessar.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.Btn_Acessar.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
             this.Btn_Acessar.StateCommon.Back.ColorAngle = 45F;
@@ -170,6 +173,7 @@
             this.Btn_Acessar.StateTracking.Border.Width = 1;
             this.Btn_Acessar.TabIndex = 4;
             this.Btn_Acessar.Values.Text = "Acessar";
+            this.Btn_Acessar.Click += new System.EventHandler(this.Btn_Acessar_Click);
             // 
             // Txt_SenhaUsuario
             // 
@@ -177,7 +181,7 @@
             this.Txt_SenhaUsuario.Location = new System.Drawing.Point(13, 114);
             this.Txt_SenhaUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.Txt_SenhaUsuario.Name = "Txt_SenhaUsuario";
-            this.Txt_SenhaUsuario.Size = new System.Drawing.Size(285, 60);
+            this.Txt_SenhaUsuario.Size = new System.Drawing.Size(295, 60);
             this.Txt_SenhaUsuario.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.Txt_SenhaUsuario.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.Txt_SenhaUsuario.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
@@ -192,14 +196,15 @@
             this.Txt_SenhaUsuario.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10);
             this.Txt_SenhaUsuario.TabIndex = 3;
             this.Txt_SenhaUsuario.Text = "Entre com sua senha";
+            this.Txt_SenhaUsuario.TextChanged += new System.EventHandler(this.Txt_SenhaUsuario_TextChanged);
             this.Txt_SenhaUsuario.MouseEnter += new System.EventHandler(this.Txt_SenhaUsuario_MouseEnter);
             // 
             // Pic_Logo
             // 
             this.Pic_Logo.Image = global::IntraChat.Properties.Resources.IntraChatLogo;
-            this.Pic_Logo.Location = new System.Drawing.Point(323, 9);
+            this.Pic_Logo.Location = new System.Drawing.Point(315, 11);
             this.Pic_Logo.Name = "Pic_Logo";
-            this.Pic_Logo.Size = new System.Drawing.Size(242, 225);
+            this.Pic_Logo.Size = new System.Drawing.Size(259, 231);
             this.Pic_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Pic_Logo.TabIndex = 3;
             this.Pic_Logo.TabStop = false;
@@ -224,12 +229,27 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Usuário";
             // 
+            // btn_verSenha
+            // 
+            this.btn_verSenha.FlatAppearance.BorderSize = 0;
+            this.btn_verSenha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_verSenha.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
+            this.btn_verSenha.IconColor = System.Drawing.Color.Black;
+            this.btn_verSenha.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_verSenha.Location = new System.Drawing.Point(251, 128);
+            this.btn_verSenha.Name = "btn_verSenha";
+            this.btn_verSenha.Size = new System.Drawing.Size(51, 44);
+            this.btn_verSenha.TabIndex = 7;
+            this.btn_verSenha.UseVisualStyleBackColor = true;
+            this.btn_verSenha.Click += new System.EventHandler(this.btn_verSenha_Click);
+            // 
             // Frm_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(577, 262);
+            this.Controls.Add(this.btn_verSenha);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Pic_Logo);
@@ -246,7 +266,7 @@
             this.Palette = this.kryptonPalette_Login;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Intra Chat - Sua ferramenta de comunicação interna";
+            this.Text = "IntraChat - Sua ferramenta de comunicação interna";
             this.Load += new System.EventHandler(this.Frm_Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Logo)).EndInit();
             this.ResumeLayout(false);
@@ -263,6 +283,7 @@
         private System.Windows.Forms.PictureBox Pic_Logo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private FontAwesome.Sharp.IconButton btn_verSenha;
     }
 }
 
