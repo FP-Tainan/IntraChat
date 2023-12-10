@@ -1,4 +1,5 @@
-﻿using Npgsql;
+﻿using IntraChat.Services;
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -15,9 +16,11 @@ namespace IntraChat.DataAccess
 
         public bool VerificaUsuario(string login, string senha)
         {
-            bool Validacao = false;
-
+            Criptografia cripto = new Criptografia();
             DataTable dt = new DataTable();
+
+            bool Validacao = false;
+            string SenhaCriptografada = cripto.Senha(senha);
 
             try
             {
@@ -25,7 +28,7 @@ namespace IntraChat.DataAccess
                 
                     conn.Open();
 
-                    string query = $"SELECT * FROM tbl_usuario WHERE login = {login} AND senha = {senha}";
+                    string query = $"SELECT * FROM tbl_usuario WHERE usuario = '{login}' AND senha = '{SenhaCriptografada}'";
 
                     NpgsqlCommand cmd = new NpgsqlCommand(query, conn);
 

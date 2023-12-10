@@ -1,4 +1,5 @@
 ﻿using ComponentFactory.Krypton.Toolkit;
+using IntraChat.DataAccess;
 using IntraChat.Forms;
 using System;
 using System.Windows.Forms;
@@ -31,7 +32,13 @@ namespace IntraChat
         }
         private void Btn_Acessar_Click(object sender, EventArgs e)
         {
-          
+            ConsultasSQL consultasSQL = new ConsultasSQL();
+            bool ValidaUsuario = consultasSQL.VerificaUsuario(Txt_Usuario.Text, Txt_SenhaUsuario.Text);
+
+            if (ValidaUsuario) {  }
+            else { MessageBox.Show("Login Invalido!","IntraChat - Aviso!",MessageBoxButtons.OK,MessageBoxIcon.Information); Txt_Usuario.Focus(); }
+
+           
         }
 
         private void btn_verSenha_Click(object sender, EventArgs e)
@@ -47,6 +54,19 @@ namespace IntraChat
             if (Txt_SenhaUsuario.Text.Length > 10) { Txt_SenhaUsuario.Clear(); MessageBox.Show("A senha tem no maximo 10 digitos!"); }
         }
 
+        private void Pic_Logo_Click(object sender, EventArgs e)
+        {
+            Frm_ConfigSQL frm = new Frm_ConfigSQL();
+            frm.ShowDialog();
+        }
+
+        private void Txt_SenhaUsuario_Enter(object sender, EventArgs e)
+        {
+            if (!Txt_SenhaUsuario.UseSystemPasswordChar)
+            {
+                if (Txt_SenhaUsuario.Text == "Entre com sua senha") { Txt_SenhaUsuario.Clear(); Txt_SenhaUsuario.UseSystemPasswordChar = true; Txt_SenhaUsuario.Focus(); }
+            }
+        }
 
         #region Metodos
 
@@ -60,10 +80,6 @@ namespace IntraChat
 
         #endregion
 
-        private void Pic_Logo_Click(object sender, EventArgs e)
-        {
-            Frm_ConfigSQL frm = new Frm_ConfigSQL();
-            frm.ShowDialog();
-        }
+      
     }
 }
