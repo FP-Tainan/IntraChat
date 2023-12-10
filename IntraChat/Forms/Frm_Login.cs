@@ -35,7 +35,7 @@ namespace IntraChat
             ConsultasSQL consultasSQL = new ConsultasSQL();
             bool ValidaUsuario = consultasSQL.VerificaUsuario(Txt_Usuario.Text, Txt_SenhaUsuario.Text);
 
-            if (ValidaUsuario) {  }
+            if (ValidaUsuario) { Frm_Menu frmMenu = new Frm_Menu(); frmMenu.Show();  }
             else { MessageBox.Show("Login Invalido!","IntraChat - Aviso!",MessageBoxButtons.OK,MessageBoxIcon.Information); Txt_Usuario.Focus(); }
 
            

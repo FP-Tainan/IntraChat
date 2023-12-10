@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using IntraChat.Utilities;
 
 namespace IntraChat.DataAccess
 {
@@ -25,23 +26,35 @@ namespace IntraChat.DataAccess
             try
             {
                 NpgsqlConnection conn = Conexao();
-                
-                    conn.Open();
 
-                    string query = $"SELECT * FROM tbl_usuario WHERE usuario = '{login}' AND senha = '{SenhaCriptografada}'";
+                conn.Open();
 
-                    NpgsqlCommand cmd = new NpgsqlCommand(query, conn);
+                string query = $"SELECT id,usuario,nome FROM tbl_usuario WHERE usuario = '{login}' AND senha = '{SenhaCriptografada}'";
 
-                    NpgsqlDataReader reader = cmd.ExecuteReader();
+                NpgsqlCommand cmd = new NpgsqlCommand(query, conn);
 
-                    dt.Load(reader);
+                NpgsqlDataReader reader = cmd.ExecuteReader();
+
+                dt.Load(reader);
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Erro ao executar consulta: {ex.Message}");
             }
 
-            if (dt.Rows.Count > 0) { Validacao = true; }
+            if (dt.Rows.Count > 0)
+            {
+                DataRow dr = dt.Rows[0];
+
+                Global.DefinirUsuario_id(Convert.ToInt32(dr["id"]));
+
+                Global.DefinirUsuario(dr["usuario"].ToString());
+
+                Global.DefinirNome(dr["nome"].ToString());
+
+
+                Validacao = true;
+            }
 
             return Validacao;
 

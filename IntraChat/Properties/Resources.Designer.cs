@@ -63,6 +63,16 @@ namespace IntraChat.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DefaultUser {
+            get {
+                object obj = ResourceManager.GetObject("DefaultUser", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Fechar {
             get {
                 object obj = ResourceManager.GetObject("Fechar", resourceCulture);
@@ -96,6 +106,16 @@ namespace IntraChat.Properties {
         internal static System.Drawing.Bitmap FecharHouver22PX {
             get {
                 object obj = ResourceManager.GetObject("FecharHouver22PX", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IntaChat {
+            get {
+                object obj = ResourceManager.GetObject("IntaChat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

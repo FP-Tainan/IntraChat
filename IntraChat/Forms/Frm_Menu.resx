@@ -117,35 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="MaxMin22PX1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MaxMin22PX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Min22PX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Min22PX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Fechar 22PX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fechar 22PX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FecharHouver22PX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FecharHouver22PX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="IntaChat" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IntaChat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MaxMin22PX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MaxMin22PX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Fechar 12PX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fechar 12PX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Fechar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fechar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="IntraChatLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IntraChatLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DefaultUser" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DefaultUser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  <metadata name="kryptonPalette_Menu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>59</value>
+  </metadata>
 </root>
